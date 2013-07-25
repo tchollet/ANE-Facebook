@@ -105,17 +105,18 @@ public class InitFunction implements FREFunction
 
 		if (SessionState.CREATED_TOKEN_LOADED.equals(session.getState()))
 		{
-			Session.setActiveSession(session);
+            try
+            {
+                session.openForRead(null);
+            }
+            catch (UnsupportedOperationException exception)
+            {
+                String error = exception != null ? exception.toString() : "null exception";
+                AirFacebookExtension.log("ERROR - Couldn't open session from cached token: " + error);
+            }
+            Session.setActiveSession(session);
 			AirFacebookExtension.log("INFO - cachedAccessToken=" + session.getAccessToken());
-			try
-			{
-				session.openForRead(null);
-			}
-			catch (UnsupportedOperationException exception)
-			{
-				String error = exception != null ? exception.toString() : "null exception";
-				AirFacebookExtension.log("ERROR - Couldn't open session from cached token: " + error);
-			}
+
 		}
 		
 		return null;
