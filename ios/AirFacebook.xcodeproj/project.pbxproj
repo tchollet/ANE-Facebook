@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39D663ED16134512002CEA7A /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D663EC16134512002CEA7A /* Accounts.framework */; };
-		39D663EF16134517002CEA7A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D663EE16134516002CEA7A /* AdSupport.framework */; };
-		39D663F116134530002CEA7A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D663F016134530002CEA7A /* Social.framework */; };
+		39D663ED16134512002CEA7A /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D663EC16134512002CEA7A /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		39D663EF16134517002CEA7A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D663EE16134516002CEA7A /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		39D663F116134530002CEA7A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D663F016134530002CEA7A /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		4AAA25071703433600ECB60C /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AAA25061703433600ECB60C /* FlashRuntimeExtensions.h */; };
-		5A98569C15213BC3003A8EB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A98569B15213BC3003A8EB0 /* Foundation.framework */; };
+		5A98569C15213BC3003A8EB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A98569B15213BC3003A8EB0 /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5A9856A215213BC3003A8EB0 /* AirFacebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9856A115213BC3003A8EB0 /* AirFacebook.m */; };
 		5A9856A915213CB7003A8EB0 /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9856A815213CB7003A8EB0 /* FlashRuntimeExtensions.h */; };
+		77CD277B17A2E1B60007547B /* NSContainer+Subscripting.h in Sources */ = {isa = PBXBuildFile; fileRef = 77CD277717A2E1650007547B /* NSContainer+Subscripting.h */; };
+		77CD277C17A2E1B60007547B /* NSContainer+Subscripting.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CD277817A2E1650007547B /* NSContainer+Subscripting.m */; };
 		FA8D10801761498D005B34C7 /* FBBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = FA8D0FF81761498D005B34C7 /* FBBase64.h */; };
 		FA8D10811761498D005B34C7 /* FBBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8D0FF91761498D005B34C7 /* FBBase64.m */; };
 		FA8D10821761498D005B34C7 /* FBCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = FA8D0FFB1761498D005B34C7 /* FBCrypto.h */; };
@@ -171,6 +173,9 @@
 		5A9856A015213BC3003A8EB0 /* AirFacebook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirFacebook.h; sourceTree = "<group>"; };
 		5A9856A115213BC3003A8EB0 /* AirFacebook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirFacebook.m; sourceTree = "<group>"; };
 		5A9856A815213CB7003A8EB0 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlashRuntimeExtensions.h; path = "/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/include/FlashRuntimeExtensions.h"; sourceTree = "<absolute>"; };
+		77CD277317A1ADD70007547B /* libarclite.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libarclite.a; path = ../../../../../../Desktop/libarclite.a; sourceTree = "<group>"; };
+		77CD277717A2E1650007547B /* NSContainer+Subscripting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSContainer+Subscripting.h"; sourceTree = "<group>"; };
+		77CD277817A2E1650007547B /* NSContainer+Subscripting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSContainer+Subscripting.m"; sourceTree = "<group>"; };
 		FA8D0FF81761498D005B34C7 /* FBBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBase64.h; sourceTree = "<group>"; };
 		FA8D0FF91761498D005B34C7 /* FBBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBBase64.m; sourceTree = "<group>"; };
 		FA8D0FFB1761498D005B34C7 /* FBCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBCrypto.h; sourceTree = "<group>"; };
@@ -334,6 +339,9 @@
 		5A98568D15213BC2003A8EB0 = {
 			isa = PBXGroup;
 			children = (
+				77CD277717A2E1650007547B /* NSContainer+Subscripting.h */,
+				77CD277817A2E1650007547B /* NSContainer+Subscripting.m */,
+				77CD277317A1ADD70007547B /* libarclite.a */,
 				5A98569D15213BC3003A8EB0 /* AirFacebook */,
 				5A98569A15213BC3003A8EB0 /* Frameworks */,
 				5A98569915213BC3003A8EB0 /* Products */,
@@ -702,6 +710,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CD277B17A2E1B60007547B /* NSContainer+Subscripting.h in Sources */,
+				77CD277C17A2E1B60007547B /* NSContainer+Subscripting.m in Sources */,
 				5A9856A215213BC3003A8EB0 /* AirFacebook.m in Sources */,
 				FA8D10811761498D005B34C7 /* FBBase64.m in Sources */,
 				FA8D10831761498D005B34C7 /* FBCrypto.m in Sources */,
@@ -781,7 +791,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -797,7 +807,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -821,6 +831,7 @@
 					"\"$(SRCROOT)/../facebook-ios-sdk/lib/facebook-ios-sdk\"",
 					"\"$(SRCROOT)/../facebook-ios-sdk\"",
 					"\"$(SRCROOT)/FacebookSDK\"",
+					"\"$(SRCROOT)/../../../../../../Desktop\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -842,6 +853,7 @@
 					"\"$(SRCROOT)/../facebook-ios-sdk/lib/facebook-ios-sdk\"",
 					"\"$(SRCROOT)/../facebook-ios-sdk\"",
 					"\"$(SRCROOT)/FacebookSDK\"",
+					"\"$(SRCROOT)/../../../../../../Desktop\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -4,5 +4,5 @@
         <option>-weak_framework Accounts</option> 
         <option>-weak_framework AdSupport</option>
         <option>-weak_framework Social</option>
-    </linkerOptions> 
+    </linkerOptions>
 </platform>
